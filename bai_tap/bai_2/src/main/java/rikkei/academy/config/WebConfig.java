@@ -10,7 +10,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configurable
 @EnableWebMvc
-@ComponentScan(basePackages = {"rikkei.academy.controller"})
+@ComponentScan(basePackages = {"rikkei.academy"})
 public class WebConfig implements WebMvcConfigurer {
 	@Bean
 	public ViewResolver viewResolver(){
@@ -20,4 +20,3 @@ public class WebConfig implements WebMvcConfigurer {
 		return  resolver;
 	}
 }
-
